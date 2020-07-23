@@ -1,13 +1,6 @@
 server:
   port: 5555
 
-  #Setting logging levels
-logging:
-    level:
-      com.netflix: WARN
-      org.springframework.web: WARN
-      com.thoughtmechanix: DEBUG
-
 eureka:
   instance:
     preferIpAddress: true
@@ -16,6 +9,16 @@ eureka:
     fetchRegistry: true
     serviceUrl:
         defaultZone: http://localhost:8761/eureka/
+okta:
+  oauth2:
+    issuer: https://dev-581373.okta.com/oauth2/default
+    client-id: 0oam4f1f1ZlOTdTaC4x6
+    client-secret: k89aAn91pdSHTZYJvgUYxACTgMKMbcXqbThJtjv7
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
 
 #
 #
