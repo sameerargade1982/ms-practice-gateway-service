@@ -1,5 +1,5 @@
 server:
-  port: 5555
+  port: 9555
 
 eureka:
   instance:
@@ -31,3 +31,9 @@ logging:
 #    organizationservice: /organization/**
 #    licensingservice: /licensing/**
 
+zuul:
+  routes:
+    home:
+      path: /home
+      url: http://localhost:9999
+  sensitive-headers: Cookie,Set-Cookie
