@@ -25,9 +25,10 @@ public class TrackingFilter extends ZuulFilter{
 
     @Autowired
     FilterUtils filterUtils;
+    
     private final OAuth2AuthorizedClientService clientService;
     
-    TrackingFilter(OAuth2AuthorizedClientService clientService){
+    public TrackingFilter(OAuth2AuthorizedClientService clientService){
     	this.clientService = clientService;
     }
     @Override
