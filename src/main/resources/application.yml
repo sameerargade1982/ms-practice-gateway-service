@@ -36,4 +36,7 @@ zuul:
     home:
       path: /home
       url: http://localhost:9999
+    groceryhome:
+      path: /groceryhome
+      url: http://localhost:9595
   sensitive-headers: Cookie,Set-Cookie
